@@ -1,0 +1,133 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local UI_2 = Instance.new("Frame")
+local BackGround = Instance.new("Frame")
+local Container = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Padding = Instance.new("UIPadding")
+local criminalteam = Instance.new("TextButton")
+local tpallweapons = Instance.new("TextButton")
+local keycardtp = Instance.new("TextButton")
+local tpallweapons_2 = Instance.new("TextButton")
+local UnderLine = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local Window = Instance.new("TextLabel")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+UI_2.Name = "UI"
+UI_2.Parent = UI
+UI_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UI_2.BorderSizePixel = 0
+UI_2.Position = UDim2.new(0, 15, 0, 15)
+UI_2.Size = UDim2.new(0, 190, 0, 30)
+
+BackGround.Name = "BackGround"
+BackGround.Parent = UI_2
+BackGround.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0, 0, 1, 0)
+BackGround.Size = UDim2.new(0, 190, 0, 200)
+
+Container.Name = "Container"
+Container.Parent = UI_2
+Container.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Container.BorderSizePixel = 0
+Container.Position = UDim2.new(0, 0, 1, 0)
+Container.Size = UDim2.new(0, 190, 0, 200)
+
+UIGridLayout.Parent = Container
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 40)
+
+Padding.Name = "Padding"
+Padding.Parent = Container
+Padding.PaddingLeft = UDim.new(0, 5)
+Padding.PaddingTop = UDim.new(0, 5)
+
+criminalteam.Name = "criminal team"
+criminalteam.Parent = Container
+criminalteam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+criminalteam.BackgroundTransparency = 1.000
+criminalteam.Size = UDim2.new(0, 200, 0, 50)
+criminalteam.Font = Enum.Font.SourceSans
+criminalteam.Text = "crim team"
+criminalteam.TextColor3 = Color3.fromRGB(255, 0, 4)
+criminalteam.TextScaled = true
+criminalteam.TextSize = 25.000
+criminalteam.TextWrapped = true
+criminalteam.TextXAlignment = Enum.TextXAlignment.Left
+
+tpallweapons.Name = "tpallweapons"
+tpallweapons.Parent = Container
+tpallweapons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpallweapons.BackgroundTransparency = 1.000
+tpallweapons.Size = UDim2.new(0, 200, 0, 50)
+tpallweapons.Font = Enum.Font.SourceSans
+tpallweapons.Text = "tp to guns"
+tpallweapons.TextColor3 = Color3.fromRGB(255, 0, 4)
+tpallweapons.TextSize = 25.000
+tpallweapons.TextWrapped = true
+tpallweapons.TextXAlignment = Enum.TextXAlignment.Left
+
+keycardtp.Name = "keycard tp"
+keycardtp.Parent = Container
+keycardtp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keycardtp.BackgroundTransparency = 1.000
+keycardtp.Size = UDim2.new(0, 200, 0, 50)
+keycardtp.Font = Enum.Font.SourceSans
+keycardtp.Text = "tp to keycard"
+keycardtp.TextColor3 = Color3.fromRGB(255, 0, 4)
+keycardtp.TextSize = 25.000
+keycardtp.TextWrapped = true
+keycardtp.TextXAlignment = Enum.TextXAlignment.Left
+
+tpallweapons_2.Name = "tpallweapons"
+tpallweapons_2.Parent = Container
+tpallweapons_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tpallweapons_2.BackgroundTransparency = 1.000
+tpallweapons_2.Size = UDim2.new(0, 200, 0, 50)
+tpallweapons_2.Font = Enum.Font.SourceSans
+tpallweapons_2.Text = "heli spawn"
+tpallweapons_2.TextColor3 = Color3.fromRGB(255, 0, 4)
+tpallweapons_2.TextSize = 25.000
+tpallweapons_2.TextWrapped = true
+tpallweapons_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = UI_2
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 25, 25)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 1, -1)
+UnderLine.Size = UDim2.new(1, 0, 0, 1)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = UI_2
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.BackgroundTransparency = 1.000
+Toggle.Position = UDim2.new(1, -25, 0.166666672, 0)
+Toggle.Size = UDim2.new(0, 25, 1, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "-"
+Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.TextSize = 17.000
+
+Window.Name = "Window"
+Window.Parent = UI_2
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.BackgroundTransparency = 1.000
+Window.Size = UDim2.new(0.973684192, 0, 1, 0)
+Window.Font = Enum.Font.SourceSans
+Window.Text = "small funy script"
+Window.TextColor3 = Color3.fromRGB(255, 0, 4)
+Window.TextScaled = true
+Window.TextSize = 17.000
+Window.TextWrapped = true
